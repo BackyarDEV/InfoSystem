@@ -1,0 +1,19 @@
+Restore MySQL Database using dump file:
+
+Pre-requisite:
+
+~MySQL server
+~Dump file(info.sql)
+
+Steps:
+~Run MySQL 5.7 Command Line Client
+~Create a database named info using code:
+    "create database info;"
+~Open Command Prompt as an Administrator
+~Find location of MySQL 'bin' folder.(Typical loaction: C:/Program Files/MySQL/MySQL Server 5.7/bin)
+~change Command Prompt directory using code:
+   "cd C:/Program Files/MySQL/MySQL Server 5.7/bin"
+~Find location of dump file 'info.sql'.
+~run the following code to restore database dump:
+   "mysql -u root -p -h localhost info>location of info.sql"
+~Enter MySQL server password and press enter.
